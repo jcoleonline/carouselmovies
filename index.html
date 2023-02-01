@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .carousel{
+            width: 400px;
+            height: 700px;
+            margin: auto;
+            background-position: center;
+            background-size: cover;
+            background-image: url("poster1.png");
+            }
+
+            .fade{
+                -webkit-animation: 1s fade;
+                animation: 1s fade;
+            }
+
+            @-webkit-keyframes fade{
+                from{opacity:  0.4;}
+                to{opacity: 1;}
+            }
+
+            @keyframes fade{
+                from{opacity:  0.4;}
+                to{opacity: 1;}
+            }
+    </style>
+</head>
+<body>
+    <div class="carousel fade" ></div>
+    <script src="app.js"></script>
+</body>
+</html>
